@@ -1,4 +1,4 @@
-<%- include('../partials/header') %>
+<%- include('./partials/header') %>
 
   <div>
     <h1>The Wedding of Stavon and Tyler</h1>
@@ -7,12 +7,4 @@
     <p>Welcome to the website for the Stavon and Tyler's wedding! Please feel free to sign the guestbook.</p>
   </div>
   <img src="/images/us1.jpg" width=500px height=auto>
-</body>
-<footer>
-  <ul>Registered Users:
-    <% users.forEach(u => { %>
-      <li><%= u.name %></li>
-    <% }) %>
-  </ul>
-</footer>
-</html>
+<%- include('./partials/footer')%>

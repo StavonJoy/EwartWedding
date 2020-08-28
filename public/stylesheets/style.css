@@ -9,4 +9,16 @@
 #search-row form {
   padding-top: 20px;
 }
-
+body {
+  text-align: center;
+}
+li {
+  list-style-type: none;
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
