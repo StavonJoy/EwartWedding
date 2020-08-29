@@ -8,7 +8,7 @@ For my unit 2 project at GA I wanted to create a web app for my upcoming wedding
 ### Wireframes / ERD
 
 Here are the views of what the app will look like:
-![home](../Wedding-App/public/images/home.png)
+![home](../../Wedding-App/public/images/home.png)
 ![about](../Wedding-App/public/images/about.png)
 ![info](../Wedding-App/public/images/info.png)
 ![guestbook](../Wedding-App/public/images/guestbook.png)

@@ -10,30 +10,16 @@
   
 </head>
 <body>
-  <nav id="nav">
-    <ul class="nav nav-pills nav-fill">
-      <li class="nav-item">
-        <a class="nav-link active" href="/">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/about">About Us</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/info">Wedding Info</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Guestbook</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Registry</a>
-      </li>
-      <li class="nav-item">
-        <% if (user) { %>
-          <a class="nav-link" href="/auth/logout">Log Out</a>
-        <% } else { %>
-          <a class="nav-link" href="/auth/google">Login with Google</a>
-        <% } %>
-      </li>
-    </ul>
+  <nav>
+    <a href="/" <%- title === 'home' ? 'class="active"' : '' %>>Home</a>
+    <a href="/about" <%- title === 'about-us' ? 'class="active"' : '' %>>About Us</a>
+    <a href="/info" <%- title === 'about-wedding' ? 'class="active"' : '' %>>Wedding Info</a>
+    <a href="/guestbook" <%- title === 'guestbook' ? 'class="active"' : '' %>>Guestbook</a>
+    <a href="#">Registry</a>
+    <% if (user) { %>
+      <a href="/auth/logout">Log Out</a>
+    <% } else { %>
+      <a href="/auth/google">Login with Google</a>
+    <% } %>
   </nav>
   
