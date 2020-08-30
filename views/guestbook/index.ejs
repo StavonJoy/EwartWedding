@@ -2,26 +2,29 @@
 
 <h3><%= title %></h3>
 <main>
+  <div class="guestbook">
+    <form action="/guestbook" method="POST">
+      <div class="form-group">
+        <input type="text" id="guestbook" class="form-control" aria-describedby="message" name="title" autocomplete="off" placeholder="Sign the guestbook...">
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div><br>
+  <div>
 
-  <form action="/guestbook" method="POST">
-    <div class="form-group">
-      <input type="text" id="guestbook" class="form-control" aria-describedby="message" name="title" autocomplete="off" placeholder="Sign the guestbook...">
-    </div>
-    <button type="submit">Submit</button>
-  </form>
-  
-  <% messages.forEach(message => { %>
-    <div class="card">
-      <div class="card-header">
-        <%= message.postedBy %> <img id="avatarPhoto" width="30" src="<%= message.avatar %>" alt="">
+    <% messages.forEach(message => { %>
+      <div class="card">
+        <div class="card-header">
+          <%= message.postedBy %>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"><%= message.title %></h5>
+          <h6><%= message.createdAt.toLocaleString()%></h6>
+          <a href="/guestbook/<%= message._id %>" class="btn btn-primary">See Post</a>
+        </div>
       </div>
-      <div class="card-body">
-        <h5 class="card-title"><%= message.title %></h5>
-        <h6><%= message.createdAt.toLocaleString()%></h6>
-        <a href="/guestbook/<%= message._id %>" class="btn btn-primary">See Post</a>
-      </div>
+      <% }) %>
     </div>
-    <% }) %>
-    
-  </main>
+      
+    </main>
     <%- include('../partials/footer') %>
