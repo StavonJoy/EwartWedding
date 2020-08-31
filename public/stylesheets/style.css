@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Courgette&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Courgette&family=Kalam&display=swap');
 .brand-logo {
   margin-left: 15px;
 }
@@ -92,11 +91,13 @@ button:active {
 }
 
 table{
-  /* width: 40%; */
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 10%;
+
 }
-tbody {
-  width: 300px;
+tr {
+  border: 1px solid white;
+  padding: 5px;
+  margin: 10px;
 }
