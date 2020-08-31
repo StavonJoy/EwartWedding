@@ -5,8 +5,8 @@ module.exports = {
 }
 
 function index(req, res){
-  Item.findById(req.params.id)
+  Item.find({})
   .then((items)=> {
-    res.render('registry/index', {title: 'Registry', user: req.user} )
+    res.render('registry/index', {title: 'Registry', user: req.user, items} )
   })
 }
