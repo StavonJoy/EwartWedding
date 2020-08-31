@@ -9,8 +9,7 @@ module.exports = {
 
 function reply(req, res){
   req.body.postedBy = req.user.name
-  req.body.avatar = req.user.avatar
-  Message.create(req.params.id)
+  Message.findById(req.params.id)
   .then((message)=> {
     message.replies.push(req.body)
     message.save()
@@ -33,7 +32,6 @@ function show(req, res){
 
 function create(req, res){
   req.body.postedBy = req.user.name
-  req.body.avatar = req.user.avatar
   Message.create(req.body)
   .then(()=>{
     res.redirect('/guestbook')

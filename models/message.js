@@ -3,13 +3,11 @@ const Schema = mongoose.Schema;
 
 const replySchema = new Schema({
   postedBy: String,
-  avatar: String,
   message: String,
 })
 
 const messageSchema = new Schema({
   postedBy: String,
-  avatar: String,
   title: String,
   replies: [replySchema],
 }, {

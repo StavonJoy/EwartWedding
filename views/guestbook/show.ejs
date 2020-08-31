@@ -5,12 +5,12 @@
 <h5>Posted on <%= message.createdAt.toLocaleString() %> - <%= message.postedBy %></h5>
 
 <% message.replies.forEach(reply =>  { %>
-  <h6><%= reply.message %> = <%= reply.postedBy %></h6>
+  <h6><%= reply.message %> - <%= reply.postedBy %></h6>
 <% }) %>
 
-<form action="/guestbook/<%= message._id %>" method="POST"></form>
+<form action="/guestbook/<%= message._id %>" method="POST">
   <div class="form-group">
-    <input type="text" class="form-control" aria-describedby="message" name="Guestbook" autocomplete="off" placeholder="Enter reply...">
+    <input type="text" class="form-control" aria-describedby="message" name="message" autocomplete="off" placeholder="Enter reply...">
   </div>
     <button type="submit" >Reply</button>
 </form>
