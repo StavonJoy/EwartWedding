@@ -90,3 +90,13 @@ button:active {
   height: 90vh;
   background: rgba(175, 174, 174, 0.5);
 }
+
+table{
+  /* width: 40%; */
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 10%;
+}
+tbody {
+  width: 300px;
+}
