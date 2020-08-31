@@ -5,6 +5,10 @@ var userSchema = new mongoose.Schema({
   name: String,
   email: String,
   googleId: String,
+  host: {
+    type: Boolean,
+    default: false
+  },
   rsvp: {
     type: Boolean,
     default: false
