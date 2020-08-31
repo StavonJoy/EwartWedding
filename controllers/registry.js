@@ -2,7 +2,12 @@ const Item = require('../models/item')
 
 module.exports = {
   index,
+  // create
 }
+
+// function create(req, res){
+//   Item.create{req.body}
+// }
 
 function index(req, res){
   Item.find({})

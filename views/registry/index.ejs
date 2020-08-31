@@ -3,6 +3,12 @@
 
 <% if (user.host === true) { %>
 <p>You are the host, you can add things</p>
+<form action="/registry/index" method="POST">
+<input type="text" name="name" autocomplete="off" placeholder="Item name">
+<input type="text" name="link" autocomplete="off" placeholder="Amazon link">
+<input type="number" name="price" autocomplete="off" placeholder="Price"><br>
+<button type="submit">Add item</button>
+</form>
 <% } %>
 
 
