@@ -3,15 +3,15 @@
 
 <% if (user.host === true) { %>
 <p>You are the host, you can add things</p>
-<form action="/registry/index" method="POST">
-<input type="text" name="name" autocomplete="off" placeholder="Item name">
-<input type="text" name="link" autocomplete="off" placeholder="Amazon link">
+<form action="/registry" method="POST">
+<input type="text" name="name" autocomplete="off" placeholder="Item name"><br>
+<input type="text" name="link" autocomplete="off" placeholder="Amazon link"><br>
 <input type="number" name="price" autocomplete="off" placeholder="Price"><br>
-<button type="submit">Add item</button>
+<button type="submit" id="add">Add item</button>
 </form>
 <% } %>
 
-
+<h2>Our full registry can be viewed <a href="https://www.amazon.com/wedding/share/ewart2020">here.</a></h2>
 
 <% items.forEach(item => { %>
   <div class="card">
@@ -20,7 +20,7 @@
     </div>
     <div class="card-body">
       <p>Price: <%= item.price %></p>
-      <a href="">Amazon Link</a>
+      <a href="<%= item.link %>">View this on Amazon!</a>
     </div>
   </div>
 <% }) %>

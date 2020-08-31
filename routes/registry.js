@@ -2,7 +2,7 @@ const router = require('express').Router()
 const registryCtrl = require('../controllers/registry')
 
 router.get('/', isLoggedIn, registryCtrl.index);
-// router.post('/', isLoggedIn, registryCtrl.create);
+router.post('/', isLoggedIn, registryCtrl.create);
 
 
 function isLoggedIn(req, res, next){

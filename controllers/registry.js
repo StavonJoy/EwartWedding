@@ -2,12 +2,16 @@ const Item = require('../models/item')
 
 module.exports = {
   index,
-  // create
+  create
 }
 
-// function create(req, res){
-//   Item.create{req.body}
-// }
+function create(req, res){
+  req.body.item = req.params.id
+  Item.create(req.body)
+  .then(ticket => {
+    res.redirect(`/registry/${req.params.id}`, {user: req.user, title: 'Registry'} )
+  })
+}
 
 function index(req, res){
   Item.find({})
