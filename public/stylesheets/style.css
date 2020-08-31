@@ -11,6 +11,8 @@
   padding-top: 20px;
 }
 body {
+  padding: 50px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
