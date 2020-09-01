@@ -1,18 +1,14 @@
 <%- include('../partials/header') %>
 
 <h3><%= title %></h3>
-<% if(user.rsvp === true) { %>
   <div class="guestbook">
     <form action="/guestbook" method="POST">
       <div class="form-group">
-        <input type="text" id="guestbook" class="form-control" aria-describedby="message" name="title" autocomplete="off" placeholder="Sign the guestbook...">
+        <input type="text" id="guestbook" class="form-control" aria-describedby="message" name="message" autocomplete="off" placeholder="Sign the guestbook...">
       </div>
       <button type="submit">Submit</button>
     </form>
   </div><br>
-<% } else { %>
-  <p>Only guests can sign the guestbook. Talk to Stavon if you're a guest and see this message!</p>
-<% } %>
 
   <main>
     <div>

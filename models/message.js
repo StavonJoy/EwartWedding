@@ -8,7 +8,10 @@ const replySchema = new Schema({
 
 const messageSchema = new Schema({
   postedBy: String,
-  title: String,
+  title: {
+    type: String,
+    required: true
+  },
   replies: [replySchema],
 }, {
   timestamps: true,

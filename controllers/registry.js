@@ -8,8 +8,8 @@ module.exports = {
 function create(req, res){
   req.body.item = req.params.id
   Item.create(req.body)
-  .then(ticket => {
-    res.redirect(`/registry/${req.params.id}`, {user: req.user, title: 'Registry'} )
+  .then(item => {
+    res.redirect(`/registry/${req.params.id}`, {user: req.user, title: 'Registry', item} )
   })
 }
 

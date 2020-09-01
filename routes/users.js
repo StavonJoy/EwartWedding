@@ -2,7 +2,7 @@ var router = require('express').Router();
 var usersCtrl = require('../controllers/users');
 
 // GET /users
-router.get('/', usersCtrl.index);
+router.get('/', isLoggedIn, usersCtrl.index);
 router.get('/about', isLoggedIn, usersCtrl.aboutUs);
 router.get('/info', isLoggedIn, usersCtrl.aboutWedding);
 

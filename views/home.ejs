@@ -8,4 +8,13 @@
   </div>
   <img src="/images/us1.jpg" width=450px height=auto>
 </div><br>
+<footer>
+  <% if(user.host === true) { %>
+    <ul>Registered Users:
+      <% users.forEach(u => { %>
+        <li><%= u.name %></li>
+      <% }) %>
+    </ul>
+  <% } %>
+</footer>
 <%- include('./partials/footer')%>
