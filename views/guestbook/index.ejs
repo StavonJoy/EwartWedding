@@ -1,6 +1,6 @@
 <%- include('../partials/header') %>
-
-<h3><%= title %></h3>
+<div class="main-div">
+  <h3><%= title %></h3>
   <div class="guestbook">
     <form action="/guestbook" method="POST">
       <div class="form-group">
@@ -9,21 +9,22 @@
       <button type="submit">Submit</button>
     </form>
   </div><br>
-
+  
   <main>
     <div>
       <% messages.forEach(message => { %>
         <div class="card">
-      <div class="card-header">
-        <%= message.postedBy %>
+          <div class="card-header">
+            <%= message.postedBy %>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title"><%= message.title %></h5>
+            <h6><%= message.createdAt.toLocaleString()%></h6>
+            <a href="/guestbook/<%= message._id %>" class="btn btn-primary">See Post</a>
+          </div>
+        </div>
+        <% }) %>
       </div>
-      <div class="card-body">
-        <h5 class="card-title"><%= message.title %></h5>
-        <h6><%= message.createdAt.toLocaleString()%></h6>
-        <a href="/guestbook/<%= message._id %>" class="btn btn-primary">See Post</a>
-      </div>
-    </div>
-    <% }) %>
+    </main>
   </div>
-</main>
-<%- include('../partials/footer') %>
+    <%- include('../partials/footer') %>

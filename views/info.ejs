@@ -1,12 +1,12 @@
 <%- include('./partials/header') %>
-
-<h1>The Wedding</h1>
-<% if(user.rsvp === true) { %>
-  <p>Date: October 10th, 2020</p>
-  <p>Time: 3pm EST</p>
-  <p>Location: Rhode Island</p>
-<% } else { %>
-  <p>Only guests have permission to view wedding information. Contact Stavon if you're a guest and see this message!</p>
-<% } %>
-
+<div class="main-div">
+  <h1>The Wedding</h1>
+  <% if(user.rsvp === true) { %>
+    <p>Date: October 10th, 2020</p>
+    <p>Time: 3pm EST</p>
+    <p>Location: Rhode Island</p>
+  <% } else { %>
+    <p>Only guests have permission to view wedding information. Contact Stavon if you're a guest and see this message!</p>
+  <% } %>
+</div>
 <%- include('./partials/footer') %>
