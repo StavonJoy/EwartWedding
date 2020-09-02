@@ -9,18 +9,21 @@
   <link rel="stylesheet" href="/stylesheets/style.css">
   
 </head>
-<header>
-  <nav class="navbar fixed-top">
-    <a href="/" <%- title === 'home' ? 'class="active"' : '' %>>Home</a>
-    <a href="/about" <%- title === 'about-us' ? 'class="active"' : '' %>>About Us</a>
-    <a href="/info" <%- title === 'about-wedding' ? 'class="active"' : '' %>>Wedding Info</a>
-    <a href="/guestbook" <%- title === 'Guestbook' ? 'class="active"' : '' %>>Guestbook</a>
-    <a href="/registry" <%- title === 'Registry' ? 'class="active"' : '' %>">Registry</a>
-    <% if (user) { %>
-      <a href="/auth/logout">Log Out</a>
-    <% } else { %>
-      <a href="/auth/google">Login with Google</a>
-    <% } %>
-  </nav>
-</header><br>
-<body>
+<!-- <div class="parent">
+   -->
+  <body>
+  <header>
+    <nav class="navbar fixed-top">
+      <a href="/" <%- title === 'home' ? 'class="active"' : '' %>>Home</a>
+      <a href="/about" <%- title === 'about-us' ? 'class="active"' : '' %>>About Us</a>
+      <a href="/info" <%- title === 'about-wedding' ? 'class="active"' : '' %>>Wedding Info</a>
+      <a href="/guestbook" <%- title === 'Guestbook' ? 'class="active"' : '' %>>Guestbook</a>
+      <a href="/registry" <%- title === 'Registry' ? 'class="active"' : '' %>">Registry</a>
+      <% if (user) { %>
+        <a href="/auth/logout">Log Out</a>
+        <% } else { %>
+          <a href="/auth/google">Login with Google</a>
+          <% } %>
+        </nav>
+  </header>
+  <br>
