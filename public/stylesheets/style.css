@@ -3,6 +3,21 @@
   margin-left: 15px;
 }
 
+@keyframes fade {
+  from { color: white ;}
+  to {color: rgb(199, 120, 0);}
+}
+@keyframes button {
+  from {  
+    background-color: #008c85;
+    color: white;
+  }
+  to {
+    filter: brightness(150%);
+    color: black;
+  }
+}
+
 .card .card-content .card-title {
   margin-bottom: 10px;
 }
@@ -75,10 +90,12 @@ nav > a {
 nav > a:hover {
   /* filter: brightness(150%); */
   color: rgb(199, 120, 0);
+  animation-name: fade;
+  animation-duration: .3s;
 }
 
 nav > a.active {
-  color: rgb(181, 108, 0);
+  color: rgb(199, 120, 0);
 }
 
 button {
@@ -91,6 +108,8 @@ button {
 button:hover, #button:hover {
   filter: brightness(150%);
   color: black;
+  animation-name: button;
+  animation-duration: .5s;
 }
 
 button:active {
