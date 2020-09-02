@@ -19,7 +19,12 @@ Here are the views of what the app will look like:
 
 ### Technologies Used
 
-HTML, CSS, Javascript, Node.js, Express, MongoDB, Mongoose, Google OAuth
+HTML, CSS, Javascript, Node.js, Express, MongoDB, Mongoose, Google OAuth, Boostrap, Pexels Images, Fonts by Google.
+
+-------------------------------
+
+### Getting Started
+Check out the app [here](https://ewart-wedding.herokuapp.com/)!
 
 -------------------------------
 
