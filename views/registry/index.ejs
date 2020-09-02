@@ -1,8 +1,7 @@
 <%- include('../partials/header') %>
-<div class="main-div">
-
+<div class="main-div" id="reg">
   <h1>Registry page</h1>
-  
+
   <% if (user.host === true) { %>
     <p>You are the host, you can add things</p>
     <form action="/registry" method="POST">
@@ -12,20 +11,21 @@
       <button type="submit" id="add">Add item</button>
     </form>
     <% } %>
-    
+
     <h2>Our full registry can be viewed <a href="https://www.amazon.com/wedding/share/ewart2020">here.</a></h2>
-    
-    <% items.forEach(item => { %>
-      <div class="card">
-        <div class="card-header">
-          <%= item.name %>
+    <div class="reg-card">
+      <% items.forEach(item => { %>
+        <div class="card">
+          <div class="card-header">
+            <%= item.name %>
+          </div>
+          <div class="card-body">
+            <p>Price: <%= item.price %></p>
+            <a href="<%= item.link %>" target="_blank">View this on Amazon!</a>
+          </div>
         </div>
-        <div class="card-body">
-          <p>Price: <%= item.price %></p>
-          <a href="<%= item.link %>" target="_blank">View this on Amazon!</a>
-        </div>
-      </div>
       <% }) %>
+    </div>
 </div>
       
-      <%- include('../partials/footer') %>
+<%- include('../partials/footer') %>
