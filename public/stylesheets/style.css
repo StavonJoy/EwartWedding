@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Courgette&family=Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Amatic+SC:wght@700&family=Courgette&family=Kalam&family=Poiret+One&display=swap');
+
 .brand-logo {
   margin-left: 15px;
 }
@@ -25,7 +26,7 @@ a {
 
 body {
   padding: 50px;
-  font-family: 'Kalam', cursive;
+  font-family: 'Poiret One', cursive;  
   text-align: center;
   font-size: 1.3em;
   background-image: url("../images/leaves.jpg");
@@ -123,7 +124,7 @@ header > nav {
 img {
   border: 2px solid white;
   border-radius: 10px;
-  width: 30vw;
+  width: 50vw;
 }
 
 li {
@@ -198,13 +199,10 @@ tr {
     width: 99%;
     height: auto;
   } */
+  body {
+    background-size: 140%;
+  }
   .main-div {
-    width: 80%;
-    height: 88vh;
-    background-color: #00b3aad5;
-    border: 1px solid white;
-    border-radius: 10px;
-    text-align: center;
-    grid-area: body;
+    height: 70vh;
   }
 }
