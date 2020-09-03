@@ -180,10 +180,6 @@ th {
   background-color: grey;
 }
 @media only screen and (max-width: 830px){
-  /* .main-div {
-    width: 99%;
-    height: auto;
-  } */
   body {
     background-size: 140%;
   }
