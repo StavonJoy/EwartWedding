@@ -8,7 +8,7 @@ For my unit 2 project at GA I wanted to create a web app for my upcoming wedding
 ### Screenshots
 
 Here is the finished home page:
-![home](../images/done1.png "home")
+![home](public/images/done1.png "home")
 
 -------------------------------
 
