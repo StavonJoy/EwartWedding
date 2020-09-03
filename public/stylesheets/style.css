@@ -75,7 +75,9 @@ button:hover, #button:hover {
 
 .card {
   width: 300px;
-  background: #d55900;
+  /* background: #d55900; */
+  background: #7272727e;
+
   flex: 1 1 150px;
 }
 
@@ -95,7 +97,7 @@ button:hover, #button:hover {
 nav {
   grid-area: header;
   font-size: 1.75em;
-  font-weight: 700;
+  font-weight: 500;
   font-family: 'Allura', cursive;
   /* background-color: rgb(0, 184, 176); */
   background-color: rgba(0, 181, 172, 0.872);
@@ -140,6 +142,9 @@ a:hover {
   animation-duration: .3s;
 }
 
+#reg, #about {
+  height: auto;
+}
 .reg-card, .message-card {
   display: flex;
   flex-wrap: wrap;
@@ -150,19 +155,22 @@ a:hover {
 }
 
 table{
+  border-radius: 10px;
+  border: 1px solid white;
+
   /* background-color: #8a8a8a; */
   /* background-color: #00b8afb7; */
-  background: #ce6c26;
+  background: #7272727e;
   /* background: linear-gradient(0deg, rgba(213,89,0,1) 0%, rgba(0,181,172,0.9023984593837535) 100%); */
 }
 
 tr {
+  border-radius: 10px;
   border: 1px solid white;
   padding: 5px;
   margin: 10px;
 }
 th {
-  background: #ce6c26;
   font-weight: 900;
 }
 
@@ -179,7 +187,7 @@ th {
   body {
     background-size: 140%;
   }
-  /* .main-div {
-    height: 70vh;
-  } */
+  .main-div {
+    width: 110%;
+  }
 } 
