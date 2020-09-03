@@ -14,12 +14,13 @@ Here is the finished home page:
 
 ### Technologies Used
 
-HTML, CSS, Javascript, Node.js, Express, MongoDB, Mongoose, Google OAuth, Boostrap, Pexels Images, Fonts by Google.
+HTML, CSS, Javascript, Node.js, ExpressJS, Express Generator, MongoDB, MongooseJS, Google OAuth 2.0, Bootstrap, Heroku, EJS Templating, Pexels Images, Fonts by Google.
 
 -------------------------------
 
 ### Getting Started
 Check out the app [here](https://ewart-wedding.herokuapp.com/)!
+Here is the [Trello](https://trello.com/b/uyQfSNOd/wedding-app) board for this project.
 
 -------------------------------
 
