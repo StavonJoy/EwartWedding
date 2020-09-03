@@ -102,6 +102,11 @@ footer {
   text-align: center;
 }
 
+#hash {
+  font-family: 'Poiret One', cursive;  
+  font-size: .7em;
+}
+
 header {
   /* width: 100%;
   display: flex;
