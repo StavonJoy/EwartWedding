@@ -139,7 +139,7 @@ a:hover {
   animation-duration: .3s;
 }
 
-#reg, #about {
+#reg, #about, #info {
   height: auto;
 }
 .reg-card, .message-card {
