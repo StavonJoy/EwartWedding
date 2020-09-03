@@ -5,15 +5,10 @@ For my unit 2 project at GA I wanted to create a web app for my upcoming wedding
 
 -------------------------------
 
-### Wireframes / ERD
+### Screenshots
 
-Here are the views of what the app will look like:
-![home](/images/home.png)
-![about](../Wedding-App/public/images/about.png)
-![info](../Wedding-App/public/images/info.png)
-![guestbook](../Wedding-App/public/images/guestbook.png)
-![registry](../Wedding-App/public/images/registry.png)
-![ERD](../Wedding-App/public/images/erd.jpeg)
+Here is the finished home page:
+![home](images/done1.png)
 
 -------------------------------
 
