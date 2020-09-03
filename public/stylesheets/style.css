@@ -183,5 +183,6 @@ th {
   }
   .main-div {
     width: 110%;
+    height: auto;
   }
 } 
