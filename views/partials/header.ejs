@@ -23,7 +23,8 @@
         E
       </button>
       <div class="collapse navbar-collapse" id="collapse_target">
-      <ul class="navbar-nav">
+        <ul class="navbar-nav">
+        <% if (user) { %>
         <li class="nav-item">
           <a class="nav-link" href="/" <%- title === 'home' ? 'class="active"' : '' %>>Home</a>
         </li>
@@ -39,6 +40,17 @@
         <li class="nav-item">
           <a class="nav-link" href="/registry" <%- title === 'Registry' ? 'class="active"' : '' %>>Registry</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/auth/logout">Log Out</a>
+        </li>
+      <% } else { %>
+        <li class="nav-item">
+          <a class="nav-link" href="/" <%- title === 'home' ? 'class="active"' : '' %>>Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/auth/google">Login with Google</a>
+        </li>
+      <% } %>
       </ul>
     </div>
         <div>
